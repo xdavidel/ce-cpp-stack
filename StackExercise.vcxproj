@@ -22,13 +22,13 @@
     <ProjectGuid>{25EEDF12-6456-4308-B0BE-1D137155D0FB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>StackExercise</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -147,8 +147,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IntStack.h" />
+    <ClInclude Include="Stack.h" />
     <ClInclude Include="StackOverflowException.h" />
     <ClInclude Include="StackUnderflowException.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

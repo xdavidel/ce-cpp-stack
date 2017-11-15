@@ -1,9 +1,14 @@
 #include <iostream>
 #include "IntStack.h"
+#include "Stack.h"
 
-void main()
+int main()
 {
-	StackExercise::IntStack s;
+	StackExercise::Stack<int> s;
+	s.Push(5);
+	s.Push(6);
+	s.Pop();
+	s.Push(-1);
 
-	// ...
+	return 0;
 }
